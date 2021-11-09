@@ -1,5 +1,6 @@
 .folov {
-    margin-left: 70px;    
+    // margin-left: 70px;
+    margin-top: 60px;    
 }
 
 .folov__title {    
@@ -12,9 +13,10 @@
 }
 .folov__list {
     color: var(--main-color-bg);
+    margin-top: 20px;
 }
 .folov__item {
-    margin-top: 20px;
+    
     width: 44px;
     height: 44px;
     display: inline-flex;

@@ -1,8 +1,14 @@
 .contacts {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-    
+    // display: flex;
+    // margin-left: auto;
+    // align-items: center;
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;        
+        margin-left: auto;
+        
+        
+    }
 }
 
 .contacts__link {
@@ -22,9 +28,15 @@
     fill: currentColor;
 }
 .contacts__item {
-    margin-right: 50px;
-    &:last-child {
-        margin-right: 0;
+    // margin-right: 50px;
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
