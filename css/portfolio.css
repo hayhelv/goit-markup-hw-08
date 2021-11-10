@@ -65,6 +65,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .btn {
   cursor: pointer;
   color: var(--main-color-bg);
@@ -82,22 +89,32 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
-.page-header {
+.header {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
 }
 
 .page__logo--dark {
@@ -138,6 +155,8 @@ img {
   width: 100%;
   height: 600px;
   background-color: #ffffff;
+  padding-top: 48px;
+  padding-left: 40px;
 }
 
 .site-nav__list.is-open {
@@ -157,22 +176,31 @@ img {
     left: 0;
     z-index: 0;
     height: 0;
+    padding: 0;
   }
 }
 
 .site-nav__item {
   margin-right: 50px;
+  margin-bottom: 35px;
 }
 
 .site-nav__item:last-child {
   margin-right: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__item {
+    margin-bottom: 0;
+  }
 }
 
 .site-nav__link {
   position: relative;
   color: var(--secondary-color-text);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 40px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -187,6 +215,7 @@ img {
 @media screen and (min-width: 768px) {
   .site-nav__link {
     padding: 32px 0;
+    font-size: 14px;
   }
 }
 
@@ -242,10 +271,28 @@ img {
   display: none;
 }
 
+.contacts.is-open {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -276,6 +323,16 @@ img {
   }
   .contacts__item:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .contacts__item:last-child {
+    margin-right: 0;
   }
 }
 
@@ -433,6 +490,31 @@ img {
   max-width: 450px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__column {
+    max-width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__column {
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .footer__logo--white {
   font-family: 'Raleway', sans-serif;
   color: var(--main-color-bg);
@@ -490,6 +572,20 @@ img {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .folov {
+    margin-top: 0;
+    padding-top: 5px;
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .folov {
+    margin-left: 70px;
+  }
+}
+
 .folov__title {
   font-weight: 700;
   font-size: 14px;
@@ -538,6 +634,14 @@ img {
 
 .send {
   margin-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .send {
+    margin-top: 0;
+    padding-top: 5px;
+    margin-left: 93px;
+  }
 }
 
 .send__title {
@@ -625,5 +729,19 @@ img {
 
 .send__label:focus-within .send__input {
   border-color: var(--color-accent);
+}
+
+@media screen and (min-width: 1200px) {
+  .send__input {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .send__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

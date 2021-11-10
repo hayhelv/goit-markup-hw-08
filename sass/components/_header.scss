@@ -1,26 +1,19 @@
 .line {
-    border-bottom: 1px solid #ECECEC;
-    
+    border-bottom: 1px solid #ECECEC;    
 }
-.header {
-   
-    // padding: 16px 0;
-    // padding-top: 24px;
-    // padding-bottom: 25px;
-    @media screen and (min-width: 768px) {
-        
-    }
-}
-
-.page-header {
-     padding-top: 16px;
+.header {    
+    padding-top: 16px;
     padding-bottom: 16px;
-    
-    display: flex;
-    align-items: center;
-    // justify-content: space-between;
     @media screen and (min-width: 768px) {
         padding-top: 21px;
         padding-bottom: 21px;
     }
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+}
+.page-header {
+    display: flex;
+    align-items: center;
 }
