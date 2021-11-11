@@ -6,7 +6,7 @@
     padding-bottom: 16px;
     @media screen and (min-width: 768px) {
         padding-top: 21px;
-        padding-bottom: 21px;
+        
     }
     @media screen and (min-width: 1200px) {
         padding-top: 24px;
@@ -16,4 +16,63 @@
 .page-header {
     display: flex;
     align-items: center;
+}
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 800px;
+    background-color: #ffffff;
+     padding-left: 15px;
+
+    &.is-open {
+      display: inline-block;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        position: static;
+        min-height: 0;
+    }
+}
+
+.btn__burger {
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+       color: var(--color-accent); 
+    }
+}
+.burger__icon {
+    fill: currentColor;
+}
+
+.burger__cross {
+    display: none;
+    .btn__burger.is-open & {
+      display: block;  
+    }
+}
+.btn__burger.is-open .burger__menu {
+    display: none;
+    
 }
