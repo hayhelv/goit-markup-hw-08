@@ -1,10 +1,10 @@
 .contacts {
-    position: fixed;
-    left: 40px;
-    bottom: 130px;
+    margin-top: 150px;
+    padding-left: 40px;
+    
     
     @media screen and (min-width: 768px) {
-        position: static;
+        margin-top: 0;
         margin-left: auto;
     }
     @media screen and (min-width: 1200px) {

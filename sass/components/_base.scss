@@ -4,56 +4,57 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 ul {
-    list-style: none;
-    margin-top: 0;
+  list-style: none;
+  margin-top: 0;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 img {
-    display: block;
+  display: block;
+  width: 100%;
+  height: auto;
     
 }
-.conteiner{
-    
-    margin: 0 auto;
-    padding: 0 15px;
+.conteiner{    
+  margin: 0 auto;
+  padding: 0 15px;
 
-    @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn {
-    cursor: pointer;
-    color: var(--main-color-bg);
-    background-color: var(--color-accent);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--main-color-bg);
+  background-color: var(--color-accent);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
 
-    border-radius: 4px;
-    border: none;
+  border-radius: 4px;
+  border: none;
 
 }
