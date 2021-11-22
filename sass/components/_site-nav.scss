@@ -1,16 +1,16 @@
 .site-nav {
   display: flex;
   align-items: center;
+  
   @media screen and (min-width: 768px) {
     margin-left: auto;
     margin-bottom: 0;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
-.site-nav__list {
-  padding-top: 48px;
-  padding-left: 40px;
-
-    
+.site-nav__list {    
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
